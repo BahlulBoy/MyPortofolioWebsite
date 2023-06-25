@@ -205,3 +205,18 @@ h1, h2, h3, h4, h5 {
     
     /* experience content */
 /* experience */
+/* project */
+#project{
+    height: 43.6rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-bottom: 1px solid black; 
+}
+    /* project title*/
+    #project h1{
+        margin-top: 2rem;
+        font-size: 30px;
+    }
+    /* project title*/
+/* project */
