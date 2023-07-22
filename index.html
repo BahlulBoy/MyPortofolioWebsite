@@ -4,109 +4,80 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ahfaitar Abdil Hakim</title>
-    <link rel="stylesheet" href="style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./style/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    <div class="f">
-        <a href="#" class="button">Next</a>
-    </div>
-    <nav id="navigation">
-        <div class="nav-title">
-            <a href="#">
-                _Ahfaitar Abdil Hakim_
-            </a>
+    <nav class="nav flex justify-center sm:justify-between h-16 items-center px-5 border-b-2">
+        <div class="nav-title text-2xl sm:text-base">
+            <h2>_Ahfaitar Abdil Hakim_</h2>
         </div>
-        <div class="nav-action">
-            <div class="nav-item"><a href="#about-me-page">About</a></div>
-            <div class="nav-item"><a href="#education">Education</a></div>
-            <div class="nav-item"><a href="#experience">Experience</a></div>
-            <div class="nav-item"><a href="#project">Project</a></div>
-            <div class="nav-item"><a href="#">Contact</a></div>
+        <div class="nav-action hidden justify-around h-full sm:flex">            
+            <div class="nav-item flex items-center w-full h-full"><a class="flex px-3 h-full items-center" href="#about">About</a></div>
+            <div class="nav-item flex items-center w-full h-full"><a class="flex px-3 h-full items-center" href="#experience">Experience</a></div>
+            <div class="nav-item flex items-center w-full h-full"><a class="flex px-3 h-full items-center" href="">Project</a></div>
+            <div class="nav-item flex items-center w-full h-full"><a class="flex pl-3 h-full items-center" href="">Contact</a></div>
         </div>
     </nav>
-    <section id="header-page">
-        <div class="header-content">
-            <h4 id="title">Hello, Im</h4>
-            <h2 id="name">Ahfaitar Abdil Hakim</h2>
-            <p id="description">Information Technology Student at Brawijaya University</p>
+    <section class="header border-b border-black flex items-center sm:pl-20">
+        <div class="header-content mb-24 flex flex-col px-9 sm:px-0">
+            <h4 class="text-xl">Hello, Im</h4>
+            <h2 class="text-5xl font-bold">Ahfaitar Abdil Hakim</h2>
+            <h4 class="text-base font-light">Information Technology Student at Brawijaya University</h4>
+            <a href="resume/CV_Ahfaitar_Abdil_Hakim_2023.pdf" target="_blank" class="flex w-28 h-10 border-2 justify-center items-center mt-3 rounded-xl" href="">Resume</a>
         </div>
     </section>
-    <section id="about-me-page">
-        <h1 class="title">About me</h1>
-        <p class="content">I am a student of Brawijaya University majoring in Informatics Technology. I have a strong interest in programming and have sufficient knowledge in the field of Android application development, especially in the Kotlin programming language. In addition to these abilities, I am proficient in various other areas such as web development using HTML and CSS, as well as utilizing Node.js. I have a cooperative personality and can work well with team members. In addition, I am committed to carrying out my duties with a high level of responsibility.</p>
-    </section>
-    <section id="education">
-        <h1 class="title">Education</h1>
-        <div class="content">
-            <div class="left">
-                <h3>2018 - 2021</h3>
-                <h4>SMA Muhammadiyah 10 GKB Gresik</h4>
-            </div>
-            <div class="middle">
-                <div class="line top">
-                    <div style="border-left: 3px solid black;"></div>
-                </div>
-                <div class="circle"></div>
-                <div class="line bottom">
-                    <div style="border-left: 3px solid black;"></div>
-                </div>
-            </div>
-            <div class="right">
+    <section id="about" class="about grid sm:grid-cols-2 border-b border-black min-h-screen">
+        <div class="about-me-text flex justify-center my-16 sm:my-0 sm:flex-1">
+            <div class="content flex justify-center items-center flex-col px-10 sm:px-24">
+                <div class="head w-full h-9 border"></div>
+                <div class="title w-full text-center border-x pt-6 pb-4 text-3xl font-bold">About me</div>
+                <div class="desc border-x border-b text-justify px-10 pb-10 text-base font-light">I am a student of Brawijaya University majoring in Informatics Technology. I have a strong interest in programming and have sufficient knowledge in the field of Android application development, especially in the Kotlin programming language. In addition to these abilities, I am proficient in various other areas such as web development using HTML and CSS, as well as utilizing Node.js. I have a cooperative personality and can work well with team members. In addition, I am committed to carrying out my duties with a high level of responsibility.</div>
             </div>
         </div>
-        <div class="content">
-            <div class="left">
+        <div class="about-education flex items-center justify-center flex-col pt-12 pb-14 sm:pb-0 sm:pt-0 sm:flex-1">
+            <div class="title w-3/4 p-2 text-center border text-3xl font-bold mb-4 rounded-xl">Education</div>
+            <div class="item w-3/4 flex flex-col items-center justify-center border p-9 mb-4 rounded-xl">
+                <div class="title text-2xl font-semibold ">SMP Muhammadiyah 12 Paciran</div>
+                <div class="date mt-2">2015 - 2018</div>
             </div>
-            <div class="middle">
-                <div class="line top">
-                    <div style="border-left: 3px solid black;"></div>
-                </div>
-                <div class="circle"></div>
-                <div class="line bottom">
-                    <div style="border-left: 3px solid black;"></div>
-                </div>
+            <div class="item w-3/4 flex flex-col items-center justify-center border p-9 mb-4 rounded-xl">
+                <div class="title text-2xl font-semibold">SMA Muhammadiyah 10 GKB</div>
+                <div class="date mt-2">2018 - 2021</div>
             </div>
-            <div class="right">
-                <h3>2021 - Present</h3>
-                <h4>Brawijaya University</h4>
-                <h4>D3 in Information technology</h4>
+            <div class="item w-3/4 flex flex-col items-center justify-center border p-9 rounded-xl">
+                <div class="title text-2xl font-semibold">Brawijaya University</div>
+                <div class="jurusan">at D3 Information Technology</div>
+                <div class="date mt-2">2021 - Present</div>
             </div>
         </div>
     </section>
-    <section id="experience">
-        <h1>
-            Experience
-        </h1>
-        <div class="content">
-            <div class="experience-1">
-                <div class="date">
-                    <h3>Februari - Juli 2023</h3>
-                </div>
-                <div class="description">
-                    <h2 class="title">Mobile Development Student</h2>
-                    <h3 class="company">Bangkit Academy led by Google, Tokopedia, Gojek, & Traveloka</h3>
-                    <ul>Learn and implement a technological knowledge about android development in native kotlin from basic to intermediate.</ul>
-                    <ul>Had the opportunity to interact with a variety of kotlin-based android development libraries such as Android jetpack, Glide, Room, Retrofit, cameraX, and others.</ul>
-                    <ul>Gained knowledge about creating a visually appealing and user-friendly user interface based on UX Research.</ul>
-                    <ul>Successfully developed a mobile application project with a diverse team of 6 members specializing in Android development, cloud computing, and machine learning.</ul>
-                    <p></p>
-                </div>
+    <section id="experience" class="experience flex flex-col items-center min-h-screen border-b border-black px-10">
+        <div class="title text-3xl mt-8 font-bold">Experience</div>
+        <div class="item mt-7">
+            <div class="head h-8 border rounded-t-lg"></div>
+            <div class="content border px-8 pt-5 pb-8 rounded-b-lg">
+                <div class="title text-3xl font-medium">Mobile Development Student</div>
+                <div class="desc font-light">Bangkit Academy led by Google, Tokopedia, Gojek, & Traveloka · Magang</div>
+                <div class="date">Feb 2023 - July 2023</div>
             </div>
         </div>
     </section>
-    <section id="project">
-        <h1>
-            Project
-        </h1>
-        <div class="content">
-
-        </div>
+    <section class="project min-h-screen border-b border-black">
+        <div class="title text-3xl font-bold mt-12 text-center sm:ml-32 sm:text-left">Projects</div>
     </section>
-    <div class="pop-up">
-        <div class="pop-box">
-            <h4>Maaf Website Masih Dalam Pengembangan</h4>
+    <footer class="h-36 sm:h-60 py-9 flex flex-col items-center justify-center">
+        <div class="title text-2xl sm:text-3xl">_Ahfaitar Abdil Hakim</div>
+        <div class="grid grid-cols-3 gap-x-5 mt-4">
+            <a href="https://instagram.com/func_pro?igshid=OGY3MTU3OGY1Mw==" target="_blank" class="bi bi-instagram sm:text-2xl"></a>
+            <a href="https://github.com/BahlulBoy" target="_blank" class="bi bi-github sm:text-2xl"></a>
+            <a href="https://www.linkedin.com/in/ahfaitar-abdil-hakim-1b643b222/" target="_blank" class="bi bi-linkedin sm:text-2xl"></a>
         </div>
-    </div>
-    <script src="style/script.js"></script>
+        <div class="mt-4">@Ahfaitar</div>
+    </footer>
 </body>
 </html>
