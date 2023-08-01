@@ -2,13 +2,14 @@ body {
     font-family: 'Outfit', sans-serif;
 }
 
-
-/* navbar */
-/* navbar */
-
-
 /* header */
 .header{
     min-height: 91vh;
 }
 /* header */
+
+/* item-project */
+.item-project{
+    width: 300px;
+}
+/* item-project */
